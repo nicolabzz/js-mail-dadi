@@ -1,0 +1,90 @@
+<!-- 
+Mail
+Chiedi all’utente la sua email,
+controlla che sia nella lista di chi può accedere,
+stampa un messaggio appropriato sull’esito del controllo.
+
+BONUS:
+Usiamo un input e un bottone per inserire la mail e poi mostriamo i risultati in pagina.
+Prima di partire a scrivere codice poniamoci qualche domanda:
+Che ci sia un array da qualche parte?
+Se dobbiamo confrontare qualcosa che "cosa" ci serve?
+Consigli del giorno:
+1. scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
+2. javascript non fa nulla da solo, dobbiamo dirgli noi cosa vogliamo fare
+3. si ma noi cosa vogliamo fare?
+4. torniamo a scrivere in italiano
+5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- css -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <!-- js -->
+   <script src="js/script.js" defer></script>
+
+   <!-- Bootstrap -->
+   <!-- CSS only -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+   <!-- JavaScript Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>    
+   <!-- / Bootstrap -->
+
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com"> 
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+   <!-- / Google Fonts -->
+
+   <title>Email</title>
+   
+</head>
+<body class="bg-secondary">
+   <!-- email user input -->
+   <section class="row container justify-content-center text-center py-4 m-auto">
+      
+      <h1 class="text-warning">Controlla se la tua mail e' presente!</h1>
+      
+      <div class="row border border-info rounded justify-content-center w-50">
+         
+         <div class="col-12 py-3">
+            <h3 class="text-warning">Inserisci la tua EMAIL</h3>
+         </div>
+         
+         <div class="col-12 py-3">
+            <input type="email" name="email" placeholder="Inserire email">
+         </div>
+         
+         <div class="col-5 py-1">
+            <button type="button" class="btn btn-warning m-1">Verifica</button>
+            <button type="button" class="btn cancel btn-danger m-1">Rinizia</button>
+         </div>
+         
+      </div>
+      
+   </section>
+   <!-- / email user input -->
+
+
+   <!-- email verification result -->
+   <section class="row container justify-content-center text-center py-4 m-auto">
+       
+      <h1 class="text-warning">Risultato verifica</h1>
+       
+      <div class="row border border-info rounded justify-content-center w-50">
+         <p class="p-5 text-light" id="result"></p>
+      </div>
+         
+   </section>
+   <!-- / email verification result -->
+
+
+   </body>
+</html>
