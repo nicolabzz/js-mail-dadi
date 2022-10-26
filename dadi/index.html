@@ -3,6 +3,7 @@ Gioco dei dadi
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 Stabilire il vincitore, in base a chi fa il punteggio più alto.
  -->
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,8 +32,47 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
    <!-- / Google Fonts -->
 
    <title>Dadi</title>
+
 </head>
 <body>
-    
+
+   <div class="container text-center pt-4">
+   
+      <h1>Gioco dei Dadi</h1>
+   
+      <!-- game number section -->
+      <div class="container lf-container">
+         
+         <p class="bg-danger">
+            
+            Tu
+            <p class="player"></p>
+            
+         </p>
+         
+         <p class="bg-info">
+            
+            Avversario
+            <p class="computer"></p>
+            
+         </p>
+         
+      </div>
+      <!-- / game number section -->
+
+
+      <!-- game button section -->
+      <button class="btn fw-bold">Tenta la sorte</button>
+      
+      <button class="btn reset fw-bold">Ricomicia</button>
+      <!-- / game button section -->
+      
+
+      <!-- game result section -->
+      <p id="output"></p>
+      <!-- / game result section -->
+      
+   </div>
+   
 </body>
 </html>
