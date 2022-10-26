@@ -10,7 +10,7 @@ const cancel = document.querySelector('.cancel');       // need this to use the 
 //function to verify the email presence
 btn.addEventListener('click', function() {
 
-    if (input == undefined)
+    if (input.value == '')
     {
         result.innerHTML = 'Please enter a valid email';
         return;
